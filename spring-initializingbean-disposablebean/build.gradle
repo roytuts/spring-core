@@ -1,0 +1,29 @@
+buildscript {
+	ext {
+		springVersion = '5.2.7.RELEASE'
+	}
+    repositories {
+    	mavenLocal()
+    	mavenCentral()
+    }
+    dependencies {
+    	classpath("io.spring.gradle:dependency-management-plugin:1.0.9.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'io.spring.dependency-management'
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+dependencies {
+	compile("org.springframework:spring-core:${springVersion}")
+	compile("org.springframework:spring-beans:${springVersion}")
+	compile("org.springframework:spring-context:${springVersion}")
+}
