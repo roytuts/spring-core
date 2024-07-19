@@ -1,1 +1,1 @@
-You can read tutorial https://www.roytuts.com/custom-init-and-destroy-methods-in-spring/
+Please follow the tutorial https://roytuts.com/custom-init-and-destroy-methods-in-spring/
